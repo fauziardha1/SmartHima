@@ -3,4 +3,19 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="anda_dapat_">
+Anda dapat kembali masuk lagi dengan menggunakan email dan password yang telah diberikan
+</string>
+    <string name="selesaikan_tugas">Selesaikan tugas?</string>
+    <string name="tugas_akan">Tugas akan dianggap selesai jika seluruh pihak yang terkait ikut menyetujui penyelesaian tugas ini.</string>
+    <string name="harap_seger">
+    Harap segera melapor ke sekretaris yang sedang menjabat untuk dibuatkan akun. Email dan password akun akan diinfokan lebih lanjut.
+    </string>
+
+    <string name="belum_punya">
+    Belum punya akun SmartHIMA?
+    </string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="belum_punya_akun"><u>Belum punya akun?</u></string>
 </resources>

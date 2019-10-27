@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:gravity="center">
+
+    <View
+        android:id="@+id/rectangle_2"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-24dp"
+        android:background="@drawable/popup_bg"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="0dp"
+                android:textAlignment="center">
+
+                <TextView
+                    android:id="@+id/belum_punya"
+                    android:layout_width="match_parent"
+                    android:layout_height="24.42dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10.42dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/raleway"
+                    android:text="@string/belum_punya"
+                    android:textAppearance="@style/belum_punya"
+                    android:gravity="center_horizontal|center_vertical"
+                    />
+
+                <TextView
+                    android:id="@+id/harap_seger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="3dp"
+                    android:padding="10dp"
+                    android:lineHeight="18dp"
+                    android:fontFamily="@font/raleway"
+                    android:text="@string/harap_seger"
+                    android:textAppearance="@style/harap_seger"
+                    android:lineSpacingExtra="4sp"
+                    android:gravity="center_horizontal|center_vertical"
+                    />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#fff"
+                    android:layout_marginBottom="10dp">
+
+
+                    <Button
+                        android:id="@+id/btn_kembali"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="KEMBALI"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/raleway"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/button_kembali_bg"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
