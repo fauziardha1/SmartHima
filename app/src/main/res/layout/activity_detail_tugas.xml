@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailTugasActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="#00B4E0">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:src="@drawable/ic_close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_judul_detail_tugas"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/raleway"
+            android:text="Siapkan materi BootComp2"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:gravity="center_vertical"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           <TextView
+               android:id="@+id/tv_label_keterangan"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginEnd="220dp"
+               android:layout_marginTop="30dp"
+               android:fontFamily="@font/raleway"
+               android:text="Keterangan"
+               android:textColor="#000000"
+               android:textSize="12sp"
+               android:textStyle="bold"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               android:gravity="center_vertical"/>
+
+           <TextView
+               android:id="@+id/tv_keterangan_detail"
+               android:layout_width="match_parent"
+               android:layout_height="68dp"
+               android:layout_marginStart="20dp"
+               android:layout_marginEnd="20dp"
+               android:fontFamily="@font/raleway"
+               android:text="Tidak ada keterangan tambahan untuk tugas ini."
+               android:textColor="#000000"
+               android:textSize="14sp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               android:gravity="center_vertical"/>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginEnd="20dp"
+               android:gravity="center_vertical"
+               android:orientation="horizontal">
+
+               <ImageView
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:src="@drawable/ic_subject_blue"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="15dp"
+                   android:layout_marginEnd="20dp"
+                   android:fontFamily="@font/raleway"
+                   android:text="Ubah keterangan"
+                   android:textColor="#2193B0"
+                   android:textSize="14sp"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   android:gravity="center_vertical"/>
+
+           </LinearLayout>
+
+<!--           tenggat waktu -->
+           <TextView
+               android:id="@+id/tv_label_tenggat_waktu"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginEnd="220dp"
+               android:layout_marginTop="20dp"
+               android:fontFamily="@font/raleway"
+               android:text="Tenggat waktu"
+               android:textColor="#000000"
+               android:textSize="12sp"
+               android:textStyle="bold"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               android:gravity="center_vertical"/>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginEnd="20dp"
+               android:layout_marginTop="10dp"
+               android:gravity="center_vertical"
+               android:orientation="horizontal">
+
+               <ImageView
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:src="@drawable/ic_date"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="15dp"
+                   android:layout_marginEnd="20dp"
+                   android:fontFamily="@font/raleway"
+                   android:text="23 Agustus 2018"
+                   android:textColor="#2193B0"
+                   android:textSize="14sp"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   android:gravity="center_vertical"/>
+
+           </LinearLayout>
+           <!-- akhir tenggat waktu -->
+
+           <!-- awal Lampiran -->
+           <TextView
+               android:id="@+id/tv_label_lampiran"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginEnd="220dp"
+               android:layout_marginTop="20dp"
+               android:fontFamily="@font/raleway"
+               android:text="Lampiran"
+               android:textColor="#000000"
+               android:textSize="12sp"
+               android:textStyle="bold"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               android:gravity="center_vertical"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:layout_marginStart="20dp"
+               android:layout_marginEnd="30dp"
+               android:layout_marginTop="10dp"
+               android:gravity="center_vertical"
+               android:background="@drawable/icon_file_bg"
+               android:orientation="horizontal">
+
+               <ImageView
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:layout_marginStart="17dp"
+                   android:src="@drawable/ic_file"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="15dp"
+                       android:layout_marginEnd="20dp"
+                       android:fontFamily="@font/raleway"
+                       android:text="Panduan materi.pdf"
+                       android:textColor="#000000"
+                       android:textSize="12sp"
+                       android:textStyle="bold"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"
+                       android:gravity="center_vertical"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="15dp"
+                       android:layout_marginEnd="20dp"
+                       android:fontFamily="@font/raleway"
+                       android:text="23 Agustus 2018"
+                       android:textSize="11sp"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"
+                       android:gravity="center_vertical"/>
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginEnd="20dp"
+               android:layout_marginTop="10dp"
+               android:gravity="center_vertical"
+               android:orientation="horizontal">
+
+               <ImageView
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:src="@drawable/ic_attach"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="15dp"
+                   android:layout_marginEnd="20dp"
+                   android:fontFamily="@font/raleway"
+                   android:text="Unggah Lampiran"
+                   android:textAllCaps="true"
+                   android:textColor="#2193B0"
+                   android:textSize="12sp"
+                   android:textStyle="bold"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   android:gravity="center_vertical"/>
+
+           </LinearLayout>
+
+           <!-- akhir dari lampiran -->
+
+           <!--  awal dari pihak terkait  -->
+
+           <TextView
+               android:id="@+id/tv_label_pihak_terkait"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginEnd="220dp"
+               android:layout_marginTop="20dp"
+               android:fontFamily="@font/raleway"
+               android:text="Pihak terkait"
+               android:textColor="#000000"
+               android:textSize="12sp"
+               android:textStyle="bold"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               android:gravity="center_vertical"/>
+
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:id="@+id/linearLayout"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="20dp"
+                   android:layout_marginTop="10dp"
+                   android:gravity="center_vertical"
+                   android:orientation="horizontal"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   tools:ignore="MissingConstraints">
+
+                   <com.mikhaellopez.circularimageview.CircularImageView
+                       android:layout_width="40dp"
+                       android:layout_height="40dp"
+                       android:src="@drawable/megandi"
+                       app:civ_shadow="true"
+                       app:civ_shadow_color="#2193B0" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginEnd="10dp"
+                       android:layout_marginStart="10dp"
+                       android:text="Megandi"
+                       android:textColor="#000000" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="20dp"
+                   android:layout_marginTop="10dp"
+                   android:gravity="center_vertical"
+                   android:orientation="horizontal"
+                   app:layout_constraintStart_toEndOf="@+id/linearLayout"
+                   app:layout_constraintTop_toTopOf="parent"
+                   tools:ignore="MissingConstraints">
+
+                   <com.mikhaellopez.circularimageview.CircularImageView
+                       android:layout_width="40dp"
+                       android:layout_height="40dp"
+                       android:src="@drawable/deta"
+                       app:civ_shadow="true"
+                       app:civ_shadow_color="#2193B0" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginEnd="10dp"
+                       android:layout_marginStart="10dp"
+                       android:text="Deta Aditya"
+                       android:textColor="#000000" />
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center_vertical"
+                   android:orientation="horizontal"
+                   android:layout_marginStart="20dp"
+                   android:layout_marginTop="10dp"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                   tools:ignore="MissingConstraints">
+
+                   <com.mikhaellopez.circularimageview.CircularImageView
+                       android:layout_width="40dp"
+                       android:layout_height="40dp"
+                       android:src="@drawable/refal"
+                       app:civ_shadow="true"
+                       app:civ_shadow_color="#2193B0" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="10dp"
+                       android:layout_marginEnd="10dp"
+                       android:text="Refal Pradama Dahlan"
+                       android:textColor="#000000" />
+
+               </LinearLayout>
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginEnd="20dp"
+               android:layout_marginTop="10dp"
+               android:gravity="center_vertical"
+               android:orientation="horizontal">
+
+               <ImageView
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:src="@drawable/ic_person_add_blue"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="15dp"
+                   android:layout_marginEnd="20dp"
+                   android:fontFamily="@font/raleway"
+                   android:text="Delegasi Tugas"
+                   android:textAllCaps="true"
+                   android:textColor="#2193B0"
+                   android:textSize="12sp"
+                   android:textStyle="bold"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   android:gravity="center_vertical"/>
+
+           </LinearLayout>
+           <!-- Akhir pihak terkait -->
+
+           <!-- awal komentar dan progress -->
+           <com.google.android.material.tabs.TabLayout
+               android:id="@+id/fragment_komentar_dan_progress_pada_tugas"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:layout_constraintTop_toBottomOf="@+id/include"
+               app:tabIndicatorColor="@color/colorPrimary"
+               app:tabSelectedTextColor="@color/colorPrimary"
+               app:tabTextAppearance="@style/TextAppearance.AppCompat.Body2"
+               app:tabTextColor="#7CC7DA"
+               tools:layout_editor_absoluteX="29dp" />
+
+           <androidx.viewpager.widget.ViewPager
+               android:id="@+id/viewPagerTugas"
+               android:layout_width="match_parent"
+               android:layout_height="300dp"
+               android:touchscreenBlocksFocus="true"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/fragmentTabLayout" />
+           <!-- akhir komentar dan progress -->
+
+
+       </LinearLayout>
+
+   </ScrollView>
+
+</LinearLayout>

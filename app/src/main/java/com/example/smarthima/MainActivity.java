@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.fragmentTabLayout); // inisiasi tabLayout
-        tabLayout.addTab(tabLayout.newTab().setText("Tugas").setIcon(R.drawable.ic_tugas)); // menambahkan item di tabLayoutt
+        tabLayout.addTab(tabLayout.newTab().setText("Tugas").setIcon(R.drawable.ic_tugas)); // menambahkan item di tabLayout
         tabLayout.addTab(tabLayout.newTab().setText("Rapat").setIcon(R.drawable.ic_rapat)); // menambahkan item di tabLayout
         tabLayout.addTab(tabLayout.newTab().setText("Proker").setIcon(R.drawable.ic_proker)); // menambahkan item di tabLayout
         tabLayout.addTab(tabLayout.newTab().setText("Pengajuan").setIcon(R.drawable.ic_pengajuan)); // menambahkan item di tabLayout

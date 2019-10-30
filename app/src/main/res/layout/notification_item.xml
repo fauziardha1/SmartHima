@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/notif_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/atas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_logout_popup_bg"
+            android:fontFamily="@font/raleway"
+            android:padding="0dp"
+            android:text="pengajuan"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/raleway"
+            android:gravity="center_vertical"
+            android:text="27 agustus 2019"
+            android:textSize="12sp"
+            android:textColor="#484848" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/notif_judul"
+        android:layout_width="match_parent"
+        android:layout_height="24.42dp"
+        android:layout_below="@+id/atas"
+        android:layout_alignStart="@+id/atas"
+        android:layout_alignEnd="@+id/atas"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="22dp"
+        android:fontFamily="@font/raleway"
+        android:text="Pengadaan ruang sekre HMIK"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/notif_keterangan"
+        android:layout_width="match_parent"
+        android:layout_height="24.42dp"
+        android:layout_below="@+id/notif_judul"
+        android:layout_alignStart="@+id/notif_judul"
+        android:layout_alignEnd="@+id/notif_judul"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/raleway"
+        android:text="Pengajuan telah disetujui oleh wakil dan ketua HMIK"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+
+
+
+
+</RelativeLayout>
